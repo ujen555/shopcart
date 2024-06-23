@@ -1,0 +1,70 @@
+.banner {
+  background: #000;
+  height: 85vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  gap: 35px;
+  &__text {
+    z-index: 20;
+    margin-bottom: 20px;
+    p{
+      color: #FAFAFA;
+      margin-bottom: 40px;
+      max-width: 600px;
+    }
+  }
+
+  &__text > h2 {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.04em;
+    color: #FAFAFA;
+
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .banner {
+    height: 700px;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    &__text > p {
+      font-size: small;
+    }
+
+    &__image > img {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .banner {
+    padding: 10px;
+    &__image > img {
+      width: 300px;
+    }
+  }
+}
+.shopBtn{
+  padding: 16px 48px;
+  font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+  background-color: #00FF66;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    background-color: #FAFAFA;
+  }
+}
